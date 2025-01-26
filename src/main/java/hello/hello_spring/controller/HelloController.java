@@ -28,7 +28,7 @@ public class HelloController {
     }
 
     @GetMapping("hello-api")
-    @ResponseBody // json 방식으로 출력됌 , 최근 추세 , 없으면 그냥 html 파일 출력시켜줌
+    @ResponseBody // 객체를 json 방식으로 출력됌 , 최근 추세 , 없으면 그냥 html 파일 출력시켜줌
     public Hello helloApi(@RequestParam("name") String name){
         Hello hello = new Hello();
         hello.setName(name);
